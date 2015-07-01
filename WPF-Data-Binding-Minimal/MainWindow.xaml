@@ -1,0 +1,11 @@
+﻿<Window x:Class="WPF_Data_Binding_Minimal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WPF_Data_Binding_Minimal"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <TextBox Name="TextBox1" Text="{Binding Description}" />
+        <local:MyUserControl x:Name="UserControl1" DataContext="{Binding UserInfo}" />
+        <Button Content="Button" Click="OnClick" />
+    </StackPanel>
+</Window>
